@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const cors = require("cors");
 const session = require("express-session");
@@ -9,8 +11,8 @@ const db = require("./db");
 const app = express();
 
 const ADMIN_CREDENTIALS = {
-  username: "admin",
-  password: "admin123"
+  username: process.env.ADMIN_USER || "admin",
+  password: process.env.ADMIN_PASSWORD || "admin123"
 };
 
 const uploadDir = path.join(__dirname, "public", "uploads");
