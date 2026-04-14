@@ -1,5 +1,5 @@
 ﻿const API = "/products";
-const WHATSAPP_NUMBER = "919100289406";
+const WHATSAPP_NUMBER = "91xxxxxxxxx";
 
 async function loadProducts() {
   const search = document.getElementById("search").value;
