@@ -11,8 +11,8 @@ const db = require("./db");
 const app = express();
 
 const ADMIN_CREDENTIALS = {
-  username: process.env.ADMIN_USER || "admin",
-  password: process.env.ADMIN_PASSWORD || "admin123"
+  username: process.env.ADMIN_USER ,
+  password: process.env.ADMIN_PASSWORD 
 };
 
 const uploadDir = path.join(__dirname, "public", "uploads");
