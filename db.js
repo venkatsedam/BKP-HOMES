@@ -1,8 +1,6 @@
 ﻿const mysql = require("mysql2");
 
-const db = mysql.createConnection(
-  "mysql://root:KNrqCCCfiIXWwZkPQvfbqkyInsMIyuvm@monorail.proxy.rlwy.net:32967/railway"
-);
+const db = mysql.createConnection(process.env.MYSQL_URL);
 
 db.connect(err => {
   if (err) {
