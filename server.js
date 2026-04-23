@@ -9,6 +9,9 @@ const fs = require("fs");
 const db = require("./db");
 
 const app = express();
+app.get("/", (req, res) => {
+  res.send("BKP Homes API is running ✅");
+});
 
 const ADMIN_CREDENTIALS = {
   username: process.env.ADMIN_USER ,
